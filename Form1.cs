@@ -64,9 +64,9 @@ namespace X_O_Game
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            i++;
             if(t[0]==false)
             {
+                i++;
                 if(i%2==0)
                 {
                     r[0, 0] = 2;
@@ -105,9 +105,9 @@ namespace X_O_Game
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            i++;
             if (t[1] == false)
             {
+                i++;
                 if (i % 2 == 0)
                 {
                     r[0, 1] = 2;
@@ -146,9 +146,9 @@ namespace X_O_Game
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            i++;
             if (t[2] == false)
             {
+                i++;
                 if (i % 2 == 0)
                 {
                     r[0, 2] = 2;
@@ -187,9 +187,9 @@ namespace X_O_Game
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            i++;
             if (t[3] == false)
             {
+                i++;
                 if (i % 2 == 0)
                 {
                     r[1, 0] = 2;
@@ -228,9 +228,9 @@ namespace X_O_Game
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            i++;
             if (t[4] == false)
             {
+                i++;
                 if (i % 2 == 0)
                 {
                     r[1, 1] = 2;
@@ -269,9 +269,9 @@ namespace X_O_Game
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            i++;
             if (t[5] == false)
             {
+                i++;
                 if (i % 2 == 0)
                 {
                     r[1, 2] = 2;
@@ -310,9 +310,9 @@ namespace X_O_Game
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            i++;
             if (t[6] == false)
             {
+                i++;
                 if (i % 2 == 0)
                 {
                     r[2, 0] = 2;
@@ -351,9 +351,9 @@ namespace X_O_Game
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            i++;
             if (t[7] == false)
             {
+                i++;
                 if (i % 2 == 0)
                 {
                     r[2, 1] = 2;
@@ -392,9 +392,9 @@ namespace X_O_Game
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            i++;
             if (t[8] == false)
             {
+                i++;
                 if (i % 2 == 0)
                 {
                     r[2, 2] = 2;
