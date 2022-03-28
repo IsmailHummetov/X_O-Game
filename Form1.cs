@@ -59,6 +59,7 @@ namespace X_O_Game
         }
 
         int i = 0,p1=0,p2=0;
+        bool flag = false;
         bool[] t = new bool[9];
         int[,] r = new int[3, 3];
 
@@ -81,25 +82,31 @@ namespace X_O_Game
                 }
             }
             t[0] = true;
-            if (yoxla(ref r) == 1)
+            if(flag == false)
             {
-                for (int j = 0; j < 9; j++)
-                    t[j] = true;
-                p1++;
-                result.Text = label1.Text.ToString() + " is Win";
-                txtP1.Text = p1.ToString();
-            }
-            if (yoxla(ref r) == 2)
-            {
-                for (int j = 0; j < 9; j++)
-                    t[j] = true;
-                p2++;
-                result.Text = label2.Text.ToString() + " is Win";
-                txtP2.Text = p2.ToString();
-            }
-            if (yoxla(ref r) == 0 && i == 9)
-            {
-                result.Text = "DRAW";
+                if (yoxla(ref r) == 1)
+                {
+                    for (int j = 0; j < 9; j++)
+                        t[j] = true;
+                    p1++;
+                    result.Text = label1.Text.ToString() + " is Win";
+                    txtP1.Text = p1.ToString();
+                    flag = true;
+                }
+                if (yoxla(ref r) == 2)
+                {
+                    for (int j = 0; j < 9; j++)
+                        t[j] = true;
+                    p2++;
+                    result.Text = label2.Text.ToString() + " is Win";
+                    txtP2.Text = p2.ToString();
+                    flag = true;
+                }
+                if (yoxla(ref r) == 0 && i == 9)
+                {
+                    result.Text = "DRAW";
+                    flag = true;
+                }
             }
         }
 
@@ -122,25 +129,31 @@ namespace X_O_Game
                 }
             }
             t[1] = true;
-            if (yoxla(ref r) == 1)
+            if (flag == false)
             {
-                for (int j = 0; j < 9; j++)
-                    t[j] = true;
-                p1++;
-                result.Text = label1.Text.ToString() + " is Win";
-                txtP1.Text = p1.ToString();
-            }
-            if (yoxla(ref r) == 2)
-            {
-                for (int j = 0; j < 9; j++)
-                    t[j] = true;
-                p2++;
-                result.Text = label2.Text.ToString() + " is Win";
-                txtP2.Text = p2.ToString();
-            }
-            if (yoxla(ref r) == 0 && i == 9)
-            {
-                result.Text = "DRAW";
+                if (yoxla(ref r) == 1)
+                {
+                    for (int j = 0; j < 9; j++)
+                        t[j] = true;
+                    p1++;
+                    result.Text = label1.Text.ToString() + " is Win";
+                    txtP1.Text = p1.ToString();
+                    flag = true;
+                }
+                if (yoxla(ref r) == 2)
+                {
+                    for (int j = 0; j < 9; j++)
+                        t[j] = true;
+                    p2++;
+                    result.Text = label2.Text.ToString() + " is Win";
+                    txtP2.Text = p2.ToString();
+                    flag = true;
+                }
+                if (yoxla(ref r) == 0 && i == 9)
+                {
+                    result.Text = "DRAW";
+                    flag = true;
+                }
             }
         }
 
@@ -163,25 +176,31 @@ namespace X_O_Game
                 }
             }
             t[2] = true;
-            if (yoxla(ref r) == 1)
+            if (flag == false)
             {
-                for (int j = 0; j < 9; j++)
-                    t[j] = true;
-                p1++;
-                result.Text = label1.Text.ToString() + " is Win";
-                txtP1.Text = p1.ToString();
-            }
-            if (yoxla(ref r) == 2)
-            {
-                for (int j = 0; j < 9; j++)
-                    t[j] = true;
-                p2++;
-                result.Text = label2.Text.ToString() + " is Win";
-                txtP2.Text = p2.ToString();
-            }
-            if (yoxla(ref r) == 0 && i == 9)
-            {
-                result.Text = "DRAW";
+                if (yoxla(ref r) == 1)
+                {
+                    for (int j = 0; j < 9; j++)
+                        t[j] = true;
+                    p1++;
+                    result.Text = label1.Text.ToString() + " is Win";
+                    txtP1.Text = p1.ToString();
+                    flag = true;
+                }
+                if (yoxla(ref r) == 2)
+                {
+                    for (int j = 0; j < 9; j++)
+                        t[j] = true;
+                    p2++;
+                    result.Text = label2.Text.ToString() + " is Win";
+                    txtP2.Text = p2.ToString();
+                    flag = true;
+                }
+                if (yoxla(ref r) == 0 && i == 9)
+                {
+                    result.Text = "DRAW";
+                    flag = true;
+                }
             }
         }
 
@@ -204,25 +223,31 @@ namespace X_O_Game
                 }
             }
             t[3] = true;
-            if (yoxla(ref r) == 1)
+            if (flag == false)
             {
-                for (int j = 0; j < 9; j++)
-                    t[j] = true;
-                p1++;
-                result.Text = label1.Text.ToString() + " is Win";
-                txtP1.Text = p1.ToString();
-            }
-            if (yoxla(ref r) == 2)
-            {
-                for (int j = 0; j < 9; j++)
-                    t[j] = true;
-                p2++;
-                result.Text = label2.Text.ToString() + " is Win";
-                txtP2.Text = p2.ToString();
-            }
-            if (yoxla(ref r) == 0 && i == 9)
-            {
-                result.Text = "DRAW";
+                if (yoxla(ref r) == 1)
+                {
+                    for (int j = 0; j < 9; j++)
+                        t[j] = true;
+                    p1++;
+                    result.Text = label1.Text.ToString() + " is Win";
+                    txtP1.Text = p1.ToString();
+                    flag = true;
+                }
+                if (yoxla(ref r) == 2)
+                {
+                    for (int j = 0; j < 9; j++)
+                        t[j] = true;
+                    p2++;
+                    result.Text = label2.Text.ToString() + " is Win";
+                    txtP2.Text = p2.ToString();
+                    flag = true;
+                }
+                if (yoxla(ref r) == 0 && i == 9)
+                {
+                    result.Text = "DRAW";
+                    flag = true;
+                }
             }
         }
 
@@ -245,25 +270,31 @@ namespace X_O_Game
                 }
             }
             t[4] = true;
-            if (yoxla(ref r) == 1)
+            if (flag == false)
             {
-                for (int j = 0; j < 9; j++)
-                    t[j] = true;
-                p1++;
-                result.Text = label1.Text.ToString() + " is Win";
-                txtP1.Text = p1.ToString();
-            }
-            if (yoxla(ref r) == 2)
-            {
-                for (int j = 0; j < 9; j++)
-                    t[j] = true;
-                p2++;
-                result.Text = label2.Text.ToString() + " is Win";
-                txtP2.Text = p2.ToString();
-            }
-            if (yoxla(ref r) == 0 && i == 9)
-            {
-                result.Text = "DRAW";
+                if (yoxla(ref r) == 1)
+                {
+                    for (int j = 0; j < 9; j++)
+                        t[j] = true;
+                    p1++;
+                    result.Text = label1.Text.ToString() + " is Win";
+                    txtP1.Text = p1.ToString();
+                    flag = true;
+                }
+                if (yoxla(ref r) == 2)
+                {
+                    for (int j = 0; j < 9; j++)
+                        t[j] = true;
+                    p2++;
+                    result.Text = label2.Text.ToString() + " is Win";
+                    txtP2.Text = p2.ToString();
+                    flag = true;
+                }
+                if (yoxla(ref r) == 0 && i == 9)
+                {
+                    result.Text = "DRAW";
+                    flag = true;
+                }
             }
         }
 
@@ -286,25 +317,31 @@ namespace X_O_Game
                 }
             }
             t[5] = true;
-            if (yoxla(ref r) == 1)
+            if (flag == false)
             {
-                for (int j = 0; j < 9; j++)
-                    t[j] = true;
-                p1++;
-                result.Text = label1.Text.ToString() + " is Win";
-                txtP1.Text = p1.ToString();
-            }
-            if (yoxla(ref r) == 2)
-            {
-                for (int j = 0; j < 9; j++)
-                    t[j] = true;
-                p2++;
-                result.Text = label2.Text.ToString() + " is Win";
-                txtP2.Text = p2.ToString();
-            }
-            if (yoxla(ref r) == 0 && i == 9)
-            {
-                result.Text = "DRAW";
+                if (yoxla(ref r) == 1)
+                {
+                    for (int j = 0; j < 9; j++)
+                        t[j] = true;
+                    p1++;
+                    result.Text = label1.Text.ToString() + " is Win";
+                    txtP1.Text = p1.ToString();
+                    flag = true;
+                }
+                if (yoxla(ref r) == 2)
+                {
+                    for (int j = 0; j < 9; j++)
+                        t[j] = true;
+                    p2++;
+                    result.Text = label2.Text.ToString() + " is Win";
+                    txtP2.Text = p2.ToString();
+                    flag = true;
+                }
+                if (yoxla(ref r) == 0 && i == 9)
+                {
+                    result.Text = "DRAW";
+                    flag = true;
+                }
             }
         }
 
@@ -327,25 +364,31 @@ namespace X_O_Game
                 }
             }
             t[6] = true;
-            if (yoxla(ref r) == 1)
+            if (flag == false)
             {
-                for (int j = 0; j < 9; j++)
-                    t[j] = true;
-                p1++;
-                result.Text = label1.Text.ToString() + " is Win";
-                txtP1.Text = p1.ToString();
-            }
-            if (yoxla(ref r) == 2)
-            {
-                for (int j = 0; j < 9; j++)
-                    t[j] = true;
-                p2++;
-                result.Text = label2.Text.ToString() + " is Win";
-                txtP2.Text = p2.ToString();
-            }
-            if (yoxla(ref r) == 0 && i == 9)
-            {
-                result.Text = "DRAW";
+                if (yoxla(ref r) == 1)
+                {
+                    for (int j = 0; j < 9; j++)
+                        t[j] = true;
+                    p1++;
+                    result.Text = label1.Text.ToString() + " is Win";
+                    txtP1.Text = p1.ToString();
+                    flag = true;
+                }
+                if (yoxla(ref r) == 2)
+                {
+                    for (int j = 0; j < 9; j++)
+                        t[j] = true;
+                    p2++;
+                    result.Text = label2.Text.ToString() + " is Win";
+                    txtP2.Text = p2.ToString();
+                    flag = true;
+                }
+                if (yoxla(ref r) == 0 && i == 9)
+                {
+                    result.Text = "DRAW";
+                    flag = true;
+                }
             }
         }
 
@@ -368,25 +411,31 @@ namespace X_O_Game
                 }
             }
             t[7] = true;
-            if (yoxla(ref r) == 1)
+            if (flag == false)
             {
-                for (int j = 0; j < 9; j++)
-                    t[j] = true;
-                p1++;
-                result.Text = label1.Text.ToString() + " is Win";
-                txtP1.Text = p1.ToString();
-            }
-            if (yoxla(ref r) == 2)
-            {
-                for (int j = 0; j < 9; j++)
-                    t[j] = true;
-                p2++;
-                result.Text = label2.Text.ToString() + " is Win";
-                txtP2.Text = p2.ToString();
-            }
-            if(yoxla(ref r)== 0 && i==9)
-            {
-                result.Text = "DRAW";
+                if (yoxla(ref r) == 1)
+                {
+                    for (int j = 0; j < 9; j++)
+                        t[j] = true;
+                    p1++;
+                    result.Text = label1.Text.ToString() + " is Win";
+                    txtP1.Text = p1.ToString();
+                    flag = true;
+                }
+                if (yoxla(ref r) == 2)
+                {
+                    for (int j = 0; j < 9; j++)
+                        t[j] = true;
+                    p2++;
+                    result.Text = label2.Text.ToString() + " is Win";
+                    txtP2.Text = p2.ToString();
+                    flag = true;
+                }
+                if (yoxla(ref r) == 0 && i == 9)
+                {
+                    result.Text = "DRAW";
+                    flag = true;
+                }
             }
         }
 
@@ -409,25 +458,31 @@ namespace X_O_Game
                 }
             }
             t[8] = true;
-            if (yoxla(ref r) == 1)
+            if (flag == false)
             {
-                for (int j = 0; j < 9; j++)
-                    t[j] = true;
-                p1++;
-                result.Text = label1.Text.ToString() + " is Win";
-                txtP1.Text = p1.ToString();
-            }
-            if (yoxla(ref r) == 2)
-            {
-                for (int j = 0; j < 9; j++)
-                    t[j] = true;
-                p2++;
-                result.Text = label2.Text.ToString() + " is Win";
-                txtP2.Text = p2.ToString();
-            }
-            if (yoxla(ref r) == 0 && i == 9)
-            {
-                result.Text = "DRAW";
+                if (yoxla(ref r) == 1)
+                {
+                    for (int j = 0; j < 9; j++)
+                        t[j] = true;
+                    p1++;
+                    result.Text = label1.Text.ToString() + " is Win";
+                    txtP1.Text = p1.ToString();
+                    flag = true;
+                }
+                if (yoxla(ref r) == 2)
+                {
+                    for (int j = 0; j < 9; j++)
+                        t[j] = true;
+                    p2++;
+                    result.Text = label2.Text.ToString() + " is Win";
+                    txtP2.Text = p2.ToString();
+                    flag = true;
+                }
+                if (yoxla(ref r) == 0 && i == 9)
+                {
+                    result.Text = "DRAW";
+                    flag = true;
+                }
             }
         }
 
@@ -460,6 +515,7 @@ namespace X_O_Game
             btn9.Text = "";
             btn9.ForeColor = Color.Black;
             result.Text = "";
+            flag = false;
         }
 
         public static int yoxla(ref int[,] r)
